@@ -51,4 +51,4 @@ ggplot(penguins, aes(x = body_mass_g, y = bill_length_mm)) +
 
 I made my CV on overleaf using LateX.
 
--   For seeing the pdf file of my CV, click [here](EnanCV_US.pdf)
+-   For seeing the pdf file of my CV, click [here](https://asifenan.github.io/EnanCV_US.pdf)
