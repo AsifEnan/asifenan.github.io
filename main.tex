@@ -1,0 +1,305 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{dirtytalk}
+\usepackage{comment}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%----------HEADING----------
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape ASIF ENAN} \\ \vspace{1pt}
+    2039 Q Street - Apt-202 Lincoln, Nebraska 68503 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 402-525-7437 ~ \href{mailto:asifenan774@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{aenan2@huskers.unl.edu}} ~ 
+    \href{https://linkedin.com/in/asifenan/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/asifenan/}}  \\
+    \vspace{3pt}
+    Availability: Summer 2025 for Internship  % Plain text, no italics
+    \vspace{-8pt}
+\end{center}}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+\resumeSubheading
+  {University of Dhaka}{January 2018 -- June 2023}
+  {Bachelor of Science in Statistics}{Dhaka, Bangladesh}
+  \vspace{-4pt}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small{GPA: 3.80 / 4.00 [WES Evaluation: 3.88 / 4.00]}
+  \end{itemize}
+      \resumeSubheading
+  {University of Nebraska-Lincoln}{August 2024 -- Present}
+  {Master of Science in Statistics [Ongoing]}{Lincoln, NE, USA}
+  \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+
+%-----------EXPERIENCE-----------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Undergraduate Research Project}{January 2022 -- December 2022}
+    {}{}
+    {\textbf{Title}: Early Childhood Development: Variation Within Age at Marriage and Birth of Children among Women in Bangladesh}
+    \vspace{-5pt}
+      \resumeItemListStart
+        \resumeItem{Explored ways to understand the mechanism through which a mother's age at marriage and at birth of children affects the development of children aged 3-4 years using the Bangladesh MICS 2019 data.}
+        \resumeItem{Conducted Chi-Squared tests to determine the factors associated with Early Childhood Development (ECD) across three different cohorts of children.}
+        \resumeItem{Fitted three binary logistic regression models to assess the factors that have a significant effect on ECD.}
+        \resumeItem{Study identified factors such as the mother’s education level, age of the child, and attendance at an early childhood education program and others to be significant predictors of ECD.}
+      \resumeItemListEnd   
+  \resumeSubHeadingListEnd
+\vspace{-13pt}
+
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {University of Nebraska-Lincoln}{August 2024 -- Present}
+      {Graduate Teaching Assistant}{Lincoln, NE, USA}
+      \resumeItemListStart
+        \resumeItem{Graded assignments, exams, and quizzes for undergraduate course in Statistics [STAT-218].}
+        \resumeItem{Conducted office hours to assist students with course material, answer questions, and provide guidance on assignments.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Luminedge Bangladesh}{February 2024 -- May 2024}
+      {IELTS Teaching Assistant}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Conducted classes for groups of 10 students on developing listening, reading, writing and speaking skills for the IELTS examination.}
+        \resumeItem{Provided one-to-one counselling to students with weak points in any section of the exam.}
+        \resumeItem{Gave instructions and invigilated mock exams in classrooms of 40+ students.}
+        \resumeItem{Conducted 3 seminars on applying abroad and securing funding, writing statement of purpose for graduate studies in the USA.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------Standardized Tests-----------
+\section{Standardized Tests}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Graduate Record Examination (GRE)} $|$ \emph{Overall: 317; AWA: 4.5}}{July 2023}
+          \resumeItemListStart
+            \resumeItem{Quant: 161 (65th Percentile); Verbal: 156 (70th Percentile)}
+            \resumeItem{Analytical Writing: 4.5 (81st Percentile)}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{International English Language Testing System (IELTS)} $|$ \emph{Overall: 8.5}}{August 2023}
+          \resumeItemListStart
+            \resumeItem{Listening: 9; Reading: 9; Speaking: 8; Writing: 7.5}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Academic Courses}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{4}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Probability and Probability Distributions
+                \item Linear Algebra
+                \item Real Analysis
+                \item Calculus 
+                \item Test of Hypothesis
+                \item Regression Analysis
+                \item Multivariate Analysis
+                \item Theory of Estimation
+                \item Design and Analysis of Experiment
+                \item Survival Analysis
+                \item Stochastic
+
+ Process
+                \item Generalized Linear Models
+            \end{itemize}
+        \end{multicols}
+        \vspace*{2.0\multicolsep}
+        \vspace{-4pt}
+
+    %\resumeSubHeadingListEnd
+    
+
+
+%-----------CLASSPROJECTS-----------
+\section{Course Writing and Presentation}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Report Writing} $|$ \emph{\textbf{Course:} Industrial and Official Statistics}}{}
+          \resumeItemListStart
+            \resumeItem{Composed a report summarizing trends in \say{Infant Mortality in Bangladesh} based on the reports published by the Bangladesh Demographic and Health Survey (BDHS) program in the years 2017, 2014, 2011, and 2007.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Class Presentation} $|$ \emph{\textbf{Courses:} Sampling Techniques and Research Methodology}}{}
+          \resumeItemListStart
+            \resumeItem{Presented on the conceptual understanding of Stratified and Cluster sampling with illustrations and comparisons between the two sampling techniques.}
+            \resumeItem{Presented on the introduction, purpose, and steps in the solution of a research topic as well as the stages of a research process based on the coursebook.}
+          \resumeItemListEnd   
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+    \vspace{-5pt}
+ \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Programming Language} $|$ \emph{R, Python, SQL}}{}
+          \resumeItemListStart
+          \resumeItem{Gained proficiency in Python and R for statistical exploration through MS course STAT-850: Statistical Computing.}
+            \resumeItem{Leveraged statistical libraries in R such as \say{survival}, \say{tseries}, \say{qcc} to complete practical coursework for survival analysis, time series analysis, and industrial analysis.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Statistical Software and Scientific Writing} $|$ \emph{SPSS, SAS, Stata, Microsoft Excel, Rmarkdown, Quarto, Latex}}{}       
+    \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Certification and Teaching Experience}
+         \resumeItemListStart
+                \resumeItem{\underline{Public Health}: Completed three Specialization programs on Coursera from Imperial College London, consisting of eleven total courses covering the foundations of Public Health, Epidemiology, and Statistical Analysis in R for Public Health as part of their Global MPH program.}
+                \resumeItem{\underline{SAS}: Completed the SAS Programming Specialization on Coursera, that covered how to write syntax to access, transform, and analyze data, as a preparation for the SAS Base Programmer certification exam.}
+                \resumeItem{\underline{SQL}: Learned SQL operations including basic querying, filtering, sorting, and joining data using PostgreSQL on the online learning platform Datacamp.}
+                \resumeItem{\underline{R}: Gained proficiency in the tidyverse packages for exploratory data analysis and reproducibility tools like Rmarkdown/Quarto by completing over 30+ courses on Datacamp as part of their \say{Statistician and Data Scientist Career Track}.}
+                \resumeItem{\underline{Teaching}: Tutored high school students in physics, chemistry, and math for eight months, helping them improve their understanding and grades in these subjects.}
+         \resumeItemListEnd
+         
+%-----------AWARDS-----------
+\section{Awards}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Othmer Fellowship Award}{August 2024}
+      {Department of Statistics, University of Nebraska-Lincoln}{Lincoln, NE, USA}
+        \resumeItemListStart
+        \resumeItem{Awarded \$4,000 to assist with recruitment and support my studies at the University of Nebraska-Lincoln.}
+      \resumeItemListEnd
+      \resumeSubheading
+      {General Scholarship}{2023}
+      {University of Dhaka}{Dhaka, Bangladesh}
+      \resumeItemListStart
+        \resumeItem{Received for outstanding academic performance during the Bachelor of Science in Statistics program.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\end{document}
+```
